@@ -12,7 +12,7 @@ window.addEventListener("load", (event) => {
 
     player.style.height = "100vh";
     player.style.width = "100vh";
-    player.style.border-radius: 15px;
+    player.style.border-radius = "15px";
 });
 window.RufflePlayer.config = {
     "showSwfDownload": true,
