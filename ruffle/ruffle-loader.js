@@ -15,7 +15,7 @@ window.addEventListener("load", (event) => {
 });
 window.RufflePlayer.config = {
     "showSwfDownload": true,
-    "splashScreen": true,
+    "splashScreen": false,
     "autoplay": "on",
     "unmuteOverlay": "hidden",
     "allowScriptAccess": true,
