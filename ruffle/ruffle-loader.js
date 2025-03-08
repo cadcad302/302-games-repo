@@ -1,10 +1,12 @@
+const urlParameters = new URLSearchParams(window.location.search);
+const gameURL = urlParameters.get('game')
 window.RufflePlayer = window.RufflePlayer || {};
 window.addEventListener("load", (event) => {
     const ruffle = window.RufflePlayer.newest();
     const player = ruffle.createPlayer();
     const container = document.getElementById("container");
     container.appendChild(player);
-    player.load("play.swf").then(() => {
+    player.load(`${gameURL}.swf`).then(() => {
          console.info("Ruffle successfully loaded the file");
     }).catch((e) => {
          console.error(`Ruffle failed to load the file: ${e}`);
